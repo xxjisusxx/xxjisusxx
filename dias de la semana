@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+	// Declarar variables
+	int dia;
+	
+	cout << "Este programa lee un entero que corresponde a " << endl;
+	cout << " un dia de la semana y te dara el nombre del dia" << endl;
+	
+	// Entada de datos
+	cout << "Ingresa un dia de la semana(1 al 7)" << endl;
+	cin >> dia;
+	
+	// Proceso
+	switch (dia) {
+	case 1:
+		cout << "Es lunes" << endl;
+		break;
+	case 2:
+		cout << "Es martes" << endl;
+		break;
+	case 3:
+		cout << "Es miercoles" << endl;
+		break;
+	case 4:
+		cout << "Es jueves" << endl;
+		break;
+	case 5:
+		cout << "Es viernes" << endl;
+		break;
+	case 6:
+		cout << "Es sabado" << endl;
+		break;
+	case 7:
+		cout << "Es domingo" << endl;
+		break;
+	default:
+		cout << dia << " no es valido. Digita de 1 al 7" << endl;
+	}
+	return 0;
+}
